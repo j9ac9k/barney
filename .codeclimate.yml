@@ -1,0 +1,49 @@
+---
+version: "2"
+plugins:
+  duplication:
+    enabled: true
+    config:
+      languages:
+        python:
+          python_version: 3
+  bandit: # for security analysis
+    enabled: true
+    config:
+      languages:
+        python:
+          python_version: 3
+  radon: # for complexity analysis
+    enabled: true
+    config:
+      languages:
+        python:
+          python_version: 3
+  markdownlint: # for markdown
+    enabled: true
+    checks:
+      MD026:
+        enabled: false
+      MD013:
+        enabled: false
+  shellcheck:
+    enabled: true
+  sonar-python:
+    enabled: true
+    config:
+      sonar.sourceEncoding: UTF-8
+  isort:
+    enabled: true
+    channel: beta
+  fixme:
+    enabled: true
+ratings:
+  paths:
+  - "**.py"
+  - "**.md"
+exclude_patterns:
+- "data/"
+- "dist/"
+- "tests/"
+- "docs/"
+- "patch/"

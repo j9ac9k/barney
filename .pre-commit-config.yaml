@@ -1,0 +1,30 @@
+repos:
+-   repo: https://github.com/ambv/black
+    rev: 22.3.0
+    hooks:
+    - id: black
+-   repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v0.950
+    hooks:
+    -   id: mypy
+        args: ["./src", "--config-file", "setup.cfg"]
+        pass_filenames: false
+-   repo: https://github.com/pre-commit/mirrors-isort
+    rev: v5.10.1  # Use the revision sha / tag you want to point at
+    hooks:
+    -   id: isort
+        args: ["--profile=black"]
+-   repo: https://gitlab.com/pycqa/flake8
+    rev: 3.9.2
+    hooks:
+    -   id: flake8
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.2.0
+    hooks:
+    -   id: check-added-large-files
+    -   id: check-case-conflict
+    -   id: debug-statements
+    -   id: end-of-file-fixer
+    -   id: fix-encoding-pragma
+        args: ['--remove']
+    -   id: trailing-whitespace

@@ -1,0 +1,19 @@
+-i https://pypi.python.org/simple
+cffi==1.14.3
+pyqtgraph==0.12.4
+llvmlite==0.36.0
+numba==0.53.1
+numpy==1.22.2
+pandas==1.2.4
+pycparser==2.20
+pyqt5==5.15.4
+PyQt5-sip==12.9.0
+python-dateutil==2.8.1
+pytz==2020.1
+qtpy==1.10.0
+scipy==1.6.3
+signalworks==0.4.0
+six==1.15.0
+soundfile==0.10.3.post1
+sounddevice==0.4.1
+typing-extensions==3.7.4.3

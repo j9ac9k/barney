@@ -1,0 +1,20 @@
+key = 1
+filename = speech-mwm.flac
+net = test.snsr
+words = {0 700 *sil -5.0} {700 900 to -5.0} {900 1250 further -5.0} {1250 1400 his -5.0} {1400 1550 *sil -5} {1550 2100 prestige -5.0} {2100 2400 he -5.0} {2400 2920 occasionally -5.0} {2920 3150 reads -5.0} {3150 3230 *sil -5.0} {3230 3350 the -5.0} {3350 3500 wall -5.0} {3500 3800 street -5.0} {3800 4200 journal -5.0}
+transcription = to further his prestige, he occasionally reads the wall street journal
+.
+key = 2
+filename = metronome.wav
+.
+key = 3
+filename = speech-mwm.wav
+.
+key = 4
+filename = bogus.wav
+.
+key = 5
+filename = synthetic.wav
+words = {0 1000 *sil -5.0} {1000 2000 1KHz -5.0} {2000 3000 *sil -5.0} {3000 4000 5KHz -5.0} {4000 5000 *sil -5.0} {5000 6000 10KHz -5.0} {6000 7000 *sil -5.0} {7000 8000 15KHz -5.0} {8000 9000 *sil -5.0}
+transcriptions = beep beep beep bee
+.

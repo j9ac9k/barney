@@ -1,0 +1,16 @@
+[run]
+omit =
+    *__main__.py
+    *TextCompleter.py
+    *CompletionModel.py
+
+[report]
+exclude_lines =
+    pragma: no cover
+    NotImplementedError
+    if TYPE_CHECKING:
+    if 0:
+    if False:
+
+[html]
+directory = coverage_report
